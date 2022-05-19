@@ -1,0 +1,60 @@
+.item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.item-cation{
+    position: absolute;
+    width: 80%;
+    bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#lightbox-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox-item{
+    width: 60%;
+    height: 600px;
+    background-image: url(../images/portfolio-1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+#close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#next,#prev,#close,img{
+    cursor: pointer;
+}
+.item{
+    border-radius: 20px;
+    overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+    .item-cation{
+        padding: 5px;
+
+    }   
+    .item-cation h2{
+        font-size: 16px;
+    } 
+    .item-cation p{
+        font-size: 14px;
+        
+    }  
+}
